@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Página de Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#aluno">Aluno</a></li>
+                <li><a href="#curso">Curso</a></li>
+                <li><a href="#horario">Horário</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="cadastro-container">
+        <!-- Aluno -->
+        <div id="aluno" class="cadastro-section">
+            <h2>Aluno</h2>
+            <form action="#" method="post">
+                <label for="nome-completo">Nome Completo:</label>
+                <input type="text" id="nome-completo" name="nome-completo" required>
+
+                <div class="botoes-cadastro">
+                    <button type="button" class="incluir">Incluir</button>
+                    <button type="button" class="excluir">Excluir</button>
+                    <button type="button" class="alterar">Alterar</button>
+                    <button type="button" class="consultar">Consultar</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Curso -->
+        <div id="curso" class="cadastro-section">
+            <h2>Curso</h2>
+            <form action="#" method="post">
+
+                <label for="num-horas">Número de Horas:</label>
+                <input type="text" id="num-horas" name="num-horas" required>
+
+                <label for="opcoes-cursos">Opções de Cursos:</label>
+                <select id="opcoes-cursos" name="opcoes-cursos">
+                    <option value="opcao1">Cursos...</option>
+                    <option value="opcao2">Engenharia de Software</option>
+                    <option value="opcao3">Enfermagem</option>
+                    <option value="opcao3">Física</option>
+                    <option value="opcao3">Quimica</option>
+                </select>
+
+                <div class="botoes-cadastro">
+                    <button type="button" class="incluir">Incluir</button>
+                    <button type="button" class="excluir">Excluir</button>
+                    <button type="button" class="alterar">Alterar</button>
+                    <button type="button" class="consultar">Consultar</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Horário -->
+        <div id="horario" class="cadastro-section">
+            <h2>Horário</h2>
+            <form action="#" method="post">
+                <label for="intervalo1">Começo:</label>
+                <input type="time" id="intervalo1" name="intervalo1" placeholder="Ex: 1 às 3" required>
+
+                <label for="intervalo2">Término:</label>
+                <input type="time" id="intervalo2" name="intervalo2" placeholder="Ex: 4 às 6" required>
+
+                <div class="botoes-cadastro">
+                    <button type="button" class="incluir">Incluir</button>
+                    <button type="button" class="excluir">Excluir</button>
+                    <button type="button" class="alterar">Alterar</button>
+                    <button type="button" class="consultar">Consultar</button>
+                </div>
+            </form>
+        </div>
+        </div>
+            <button type="submit" class="cadastrar">Cadastrar</button>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
